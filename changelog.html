@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>更新履歴 - Keki AI</title>
+    <meta name="description" content="Keki AI の更新履歴とバージョン履歴">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://keki.ai/changelog.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .version-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .version-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50" lang="ja">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md border-b border-gray-200 z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold gradient-text">
+                    <a href="index.html">Keki AI</a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-purple-600 transition">ホーム</a>
+                    <a href="changelog.html" class="text-purple-600 font-semibold">更新履歴</a>
+                    <a href="https://github.com/nomadcafe/keki" target="_blank" class="text-gray-700 hover:text-purple-600 transition">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-24 max-w-4xl">
+        <div class="bg-white rounded-lg shadow-lg p-8">
+            <h1 class="text-4xl font-bold gradient-text mb-2">更新履歴</h1>
+            <p class="text-gray-600 mb-8">プロジェクトの重要な変更履歴を記録しています。</p>
+
+            <!-- 2025-12 -->
+            <div class="version-card bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg p-6 mb-6 border-l-4 border-purple-500">
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">📦 2025年12月</h2>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-green-700 mb-3">✨ 新機能</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>マルチユーザー対応：APIキーをブラウザのlocalStorageに保存するように変更。各ユーザーが独自のAPIキーを使用可能</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>セキュリティ強化：APIキーがサーバーに保存されなくなり、ユーザーごとに完全に分離</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">🔄 変更</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>設定画面：APIキーの保存方法を変更（サーバーからブラウザへ）</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>APIエンドポイント：リクエストにAPIキーを含める方式に変更</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-yellow-700 mb-3">🐛 修正</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-yellow-500 mr-2">•</span>
+                            <span>マルチユーザー環境でのAPIキー共有問題を修正</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2025-11 -->
+            <div class="version-card bg-white rounded-lg p-6 mb-6 border-l-4 border-gray-300 shadow">
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">📦 2025年11月</h2>
+                
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-green-700 mb-3">✨ 新機能</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>複数のLLMプロバイダー対応（OpenAI、Claude、Gemini、DeepSeek）</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>Web UIでの対話スクリプト編集機能</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">•</span>
+                            <span>CSV形式での対話スクリプトのインポート/エクスポート</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">🔄 変更</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>会話スタイルの選択機能を追加</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>ナレッジファイルのアップロード機能を追加</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-yellow-700 mb-3">🐛 修正</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-yellow-500 mr-2">•</span>
+                            <span>動画生成時のエラーハンドリングを改善</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yellow-500 mr-2">•</span>
+                            <span>音声生成の品質を向上</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-red-700 mb-3">🔒 セキュリティ</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-red-500 mr-2">•</span>
+                            <span>セキュリティ脆弱性の修正</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-700 mb-3">⚡ 最適化</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-purple-500 mr-2">•</span>
+                            <span>コードの最適化</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-purple-500 mr-2">•</span>
+                            <span>main.pyの分割とリファクタリング</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 说明 -->
+            <div class="mt-8 p-4 bg-gray-100 rounded-lg">
+                <h3 class="font-semibold text-gray-800 mb-2">📝 変更タイプの説明</h3>
+                <ul class="text-sm text-gray-600 space-y-1">
+                    <li>• <strong>新機能</strong>：新しく追加された機能</li>
+                    <li>• <strong>変更</strong>：既存機能の変更や改善</li>
+                    <li>• <strong>修正</strong>：バグ修正や問題の解決</li>
+                    <li>• <strong>セキュリティ</strong>：セキュリティ関連の修正</li>
+                    <li>• <strong>最適化</strong>：コードの最適化やリファクタリング</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 返回按钮 -->
+        <div class="mt-8 text-center">
+            <a href="index.html" class="inline-block px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
+                ← ホームに戻る
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">© 2025 Keki AI. MIT License.</p>
+            <p class="text-gray-500 text-sm mt-2">
+                <a href="https://github.com/nomadcafe/keki" target="_blank" class="hover:text-white">GitHub</a> | 
+                <a href="changelog.html" class="hover:text-white">更新履歴</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
