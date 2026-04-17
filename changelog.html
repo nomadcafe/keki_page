@@ -7,6 +7,21 @@
     <meta name="description" content="Keki AI の更新履歴とバージョン履歴">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://keki.ai/changelog.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://keki.ai/changelog.html">
+    <meta property="og:title" content="更新履歴 - Keki AI">
+    <meta property="og:description" content="Keki AI の更新履歴とバージョン履歴">
+    <meta property="og:image" content="https://keki.ai/images/ogp-image.png">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://keki.ai/changelog.html">
+    <meta property="twitter:title" content="更新履歴 - Keki AI">
+    <meta property="twitter:description" content="Keki AI の更新履歴とバージョン履歴">
+    <meta property="twitter:image" content="https://keki.ai/images/ogp-image.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         html { scroll-behavior: smooth; }
@@ -35,7 +50,7 @@
                 <div class="hidden md:flex space-x-6">
                     <a href="index.html" class="text-gray-700 hover:text-purple-600 transition">ホーム</a>
                     <a href="changelog.html" class="text-purple-600 font-semibold">更新履歴</a>
-                    <a href="https://github.com/nomadcafe/keki" target="_blank" class="text-gray-700 hover:text-purple-600 transition">GitHub</a>
+                    <a href="https://github.com/nomadcafe/keki" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-purple-600 transition">GitHub</a>
                 </div>
             </div>
         </div>
@@ -321,16 +336,16 @@
                                 <span class="text-green-500 mr-2">•</span>
                                 <span>スライド間のクロスフェード転場：スライド間の滑らかなトランジション効果を実装</span>
                             </li>
-                        <li class="flex items-start">
-                            <span class="text-green-500 mr-2">•</span>
-                            <span>マルチユーザー対応：APIキーをブラウザのlocalStorageに保存するように変更。各ユーザーが独自のAPIキーを使用可能</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-green-500 mr-2">•</span>
-                            <span>セキュリティ強化：APIキーがサーバーに保存されなくなり、ユーザーごとに完全に分離</span>
-                        </li>
-                    </ul>
-                </div>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">•</span>
+                                <span>マルチユーザー対応：APIキーをブラウザのlocalStorageに保存するように変更。各ユーザーが独自のAPIキーを使用可能</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">•</span>
+                                <span>セキュリティ強化：APIキーがサーバーに保存されなくなり、ユーザーごとに完全に分離</span>
+                            </li>
+                        </ul>
+                    </div>
 
                     <div class="mb-4">
                         <h4 class="text-base font-semibold text-blue-700 mb-2">🔄 変更</h4>
@@ -343,25 +358,25 @@
                                 <span class="text-blue-500 mr-2">•</span>
                                 <span>動画品質：視覚的な転場効果により、よりプロフェッショナルな動画を生成</span>
                             </li>
-                        <li class="flex items-start">
-                            <span class="text-blue-500 mr-2">•</span>
-                            <span>設定画面：APIキーの保存方法を変更（サーバーからブラウザへ）</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-blue-500 mr-2">•</span>
-                            <span>APIエンドポイント：リクエストにAPIキーを含める方式に変更</span>
-                        </li>
-                    </ul>
-                </div>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">•</span>
+                                <span>設定画面：APIキーの保存方法を変更（サーバーからブラウザへ）</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">•</span>
+                                <span>APIエンドポイント：リクエストにAPIキーを含める方式に変更</span>
+                            </li>
+                        </ul>
+                    </div>
 
                     <div class="mb-4">
                         <h4 class="text-base font-semibold text-yellow-700 mb-2">🐛 修正</h4>
                         <ul class="space-y-2 text-gray-700 text-sm">
-                        <li class="flex items-start">
-                            <span class="text-yellow-500 mr-2">•</span>
-                            <span>マルチユーザー環境でのAPIキー共有問題を修正</span>
-                        </li>
-                    </ul>
+                            <li class="flex items-start">
+                                <span class="text-yellow-500 mr-2">•</span>
+                                <span>マルチユーザー環境でのAPIキー共有問題を修正</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -465,7 +480,7 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8 mt-16">
         <div class="container mx-auto px-4 text-center">
-            <p class="text-gray-400">© 2025 Keki AI. MIT License.</p>
+            <p class="text-gray-400">© 2026 Keki AI. MIT License.</p>
             <p class="text-gray-500 text-sm mt-2">
                 <a href="https://github.com/nomadcafe/keki" target="_blank" class="hover:text-white">GitHub</a> | 
                 <a href="changelog.html" class="hover:text-white">更新履歴</a>

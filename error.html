@@ -7,14 +7,55 @@
     <meta name="robots" content="noindex, nofollow">
     <link rel="canonical" href="https://keki.ai/">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
 </head>
-<body class="bg-gray-50 min-h-screen flex items-center justify-center">
-    <div class="text-center px-4">
-        <h1 class="text-6xl font-bold text-gray-800 mb-4">404</h1>
-        <p class="text-2xl text-gray-600 mb-8">ページが見つかりません</p>
-        <a href="/" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-            ホームに戻る
-        </a>
-    </div>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+    <!-- Navigation -->
+    <nav class="w-full bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold gradient-text">Keki AI</a>
+                <div class="flex items-center gap-6">
+                    <a href="index.html" class="text-gray-700 hover:text-purple-600 transition font-medium">ホーム</a>
+                    <a href="https://github.com/nomadcafe/keki" target="_blank" rel="noopener noreferrer" class="bg-purple-600 text-white px-5 py-2 rounded-lg hover:bg-purple-700 transition font-medium">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex items-center justify-center px-4 py-16">
+        <div class="text-center max-w-lg">
+            <div class="text-8xl font-bold gradient-text mb-4">404</div>
+            <h1 class="text-2xl font-bold text-gray-800 mb-3">ページが見つかりません</h1>
+            <p class="text-gray-500 mb-10">お探しのページは存在しないか、移動または削除された可能性があります。</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html" class="gradient-bg text-white px-8 py-3 rounded-lg font-bold hover:opacity-90 transition shadow-md">
+                    ホームに戻る
+                </a>
+                <a href="https://github.com/nomadcafe/keki" target="_blank" rel="noopener noreferrer" class="border-2 border-purple-600 text-purple-600 px-8 py-3 rounded-lg font-bold hover:bg-purple-50 transition">
+                    GitHub を見る
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-500 text-sm">&copy; 2026 Keki AI. MIT License.</p>
+        </div>
+    </footer>
 </body>
 </html>
